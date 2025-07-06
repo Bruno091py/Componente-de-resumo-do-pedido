@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+
+font-family: "Red Hat Display", sans-serif;
+
+- Weights: 500, 700, 900
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: hsl(225, 100%, 94%);
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+main>section#principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 400px;
+    height: 540px;
+    border-radius: 20px;
+}
+
+main>section#principal>div#imagem {
+    background: url(images/illustration-hero.svg) no-repeat;
+    width: 400px;
+    height: 170px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+main>section#principal>h1 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+main>section#principal>p {
+    color: rgba(0, 0, 0, 0.42);
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px 30px;
+    font-weight: 800;
+
+}
+
+main>section#principal>section#change {
+    background-color: hsl(225, 100%, 98%);
+    margin: 20px 25px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+main>section#principal>section#change>h2 {
+    font-size: 1.1em;
+    margin-left: 75px;
+    margin-top: -54px;
+    padding-bottom: 2px;
+}
+
+main>section#principal>section#change>span {
+    padding-left: 75px;
+    color: rgba(0, 0, 0, 0.433);
+    font-weight: 800;
+}
+
+main>section#principal>section#change>a {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    color: hsl(245, 75%, 52%);
+    font-size: 0.9em;
+    font-weight: 800;
+
+}
+
+main>section#principal>section#change>a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.641);
+}
+
+main>section#principal>button#payment {
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 83px;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.205)
+}
+
+main>section#principal>button#payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.628);
+    cursor: pointer;
+}
+
+main>section#principal>button#cancel {
+    display: block;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.527);
+    background-color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+main>section#principal>button#cancel:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.attribution {
+    transform: translateY(-30px);
+    font-size: 1em;
+}
+
+.attribution>a{
+    color: hsl(245, 75%, 52%);
+}
+
+.attribution>a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.545);
+}
+
